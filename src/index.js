@@ -14,7 +14,6 @@ const isCorrect = (correctAnswer, playerAnswer, name) => {
 };
 
 const checkForGameParams = (gameParams, number1, number2, getCorrectAnswer) => {
-  const [progression, correctAnswer] = getCorrectAnswer();
   const operand = getOperand(getRandomNumber(1, 3));
 
   switch (gameParams) {
@@ -25,8 +24,8 @@ const checkForGameParams = (gameParams, number1, number2, getCorrectAnswer) => {
       console.log(`Question: ${number1} ${number2}`);
       return getCorrectAnswer(number1, number2);
     case 'progression':
-      console.log(`Question: ${progression}`);
-      return correctAnswer;
+      console.log(`Question: ${getCorrectAnswer()[0]}`);
+      return getCorrectAnswer()[1];
     default:
       console.log(`Question: ${number1}`);
   }
