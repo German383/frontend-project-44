@@ -14,7 +14,7 @@ const getCorrectAnswer = (num1, num2, operand) => {
 
 const startCalcGame = () => {
   const description = 'What is the result of the expression?';
-  engine(description, getCorrectAnswer, 2);
+  engine(description, getCorrectAnswer, 'calc');
 };
 
 export default startCalcGame;

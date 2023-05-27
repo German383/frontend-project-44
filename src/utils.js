@@ -22,9 +22,23 @@ const getOperand = (num, empty = false) => {
   }
 };
 
+const findGCD = (num1, num2) => {
+  let a = num1;
+  let b = num2;
+  while (a !== b) {
+    if (a > b) {
+      a -= b;
+    } else {
+      b -= a;
+    }
+  }
+  return String(a);
+};
+
 export {
   getRandomNumber,
   isEven,
   getArrayWithTwoRandomNumbers,
   getOperand,
+  findGCD
 }

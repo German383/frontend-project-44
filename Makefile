@@ -15,3 +15,6 @@ fix:
 
 brain-even:
 	node bin/brain-games.js
+
+brain-gcd:
+	node bin/brain-gcd.js
