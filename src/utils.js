@@ -8,9 +8,7 @@ const isEven = (num) => num % 2 === 0;
 
 const getArrayWithTwoRandomNumbers = () => [getRandomNumber(), getRandomNumber()];
 
-const getOperand = (num, empty = false) => {
-  if (empty) return ' ';
-  
+const getOperand = (num) => {
   switch (num) {
     case 1:
       return '+';

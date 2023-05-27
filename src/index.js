@@ -20,8 +20,7 @@ const checkForGameParams = (gameParams, firstRandomNumber, secondRandomNumber, g
       console.log(`Question: ${firstRandomNumber} ${operand} ${secondRandomNumber}`);
       return getCorrectAnswer(firstRandomNumber, secondRandomNumber, operand);
     case 'gcd':
-      const operandSpace = getOperand(getRandomNumber(1, 3), ' ');
-      console.log(`Question: ${firstRandomNumber}${operandSpace}${secondRandomNumber}`);
+      console.log(`Question: ${firstRandomNumber} ${secondRandomNumber}`);
       return getCorrectAnswer(firstRandomNumber, secondRandomNumber);
     case 'progression':
       const [progression, correctAnswer] = getCorrectAnswer();
