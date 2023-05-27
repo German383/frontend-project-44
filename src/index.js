@@ -17,7 +17,7 @@ const checkForGameParams = (gameParams, firstRandomNumber, secondRandomNumber, g
   switch (gameParams) {
     case 'calc':
       const operand = getOperand(getRandomNumber(1, 3));
-      console.log(`Question: ${firstRandomNumber}${operand}${secondRandomNumber}`);
+      console.log(`Question: ${firstRandomNumber} ${operand} ${secondRandomNumber}`);
       return getCorrectAnswer(firstRandomNumber, secondRandomNumber, operand);
     case 'gcd':
       const operandSpace = getOperand(getRandomNumber(1, 3), ' ');
