@@ -1,6 +1,8 @@
 import { question } from 'readline-sync';
 import showGreetings from './cli.js';
-import { getArrayWithTwoRandomNumbers, getOperand, getProgression, getRandomNumber } from './utils.js';
+import {
+  getArrayWithTwoRandomNumbers, getOperand, getProgression, getRandomNumber,
+} from './utils.js';
 
 const isCorrect = (correctAnswer, playerAnswer, name) => {
   switch (correctAnswer) {
@@ -26,9 +28,10 @@ const checkForGameParams = (gameParams, number1, number2, getCorrectAnswer) => {
     case 'single':
       console.log(`Question: ${number1}`);
       return getCorrectAnswer(number1);
+    default:
   }
   const [progression, correctAnswer] = getProgression();
-  console.log(progression);
+  console.log(`Question: ${progression}`);
   return correctAnswer;
 };
 
