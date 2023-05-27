@@ -5,7 +5,7 @@ const getCorrectAnswer = (num) => (isPrime(num) ? 'yes' : 'no');
 
 const startPrimeGame = () => {
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  engine(description, getCorrectAnswer);
+  engine(description, getCorrectAnswer, 'single');
 };
 
 export default startPrimeGame;

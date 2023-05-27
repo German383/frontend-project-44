@@ -5,7 +5,7 @@ const getCorrectAnswer = (num) => (isEven(num) ? 'yes' : 'no');
 
 const startEvenGame = () => {
   const description = 'Answer "yes" if the number is even, otherwise answer "no".';
-  engine(description, getCorrectAnswer);
+  engine(description, getCorrectAnswer, 'single');
 };
 
 export default startEvenGame;
