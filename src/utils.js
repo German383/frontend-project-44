@@ -1,6 +1,6 @@
-const getRandomNumber = (min = 1, max = 100) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
+const getRandomNumber = (minimal = 1, maximum = 100) => {
+  const min = Math.ceil(minimal);
+  const max = Math.floor(maximum);
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
@@ -18,6 +18,7 @@ const getOperand = (num) => {
       return '-';
     default:
   }
+  return null;
 };
 
 const findGCD = (num1, num2) => {
@@ -63,4 +64,4 @@ export {
   findGCD,
   getProgression,
   isPrime,
-}
+};

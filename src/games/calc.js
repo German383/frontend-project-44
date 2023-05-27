@@ -1,4 +1,4 @@
-import engine from "../index.js";
+import engine from '../index.js';
 
 const getCorrectAnswer = (num1, num2, operand) => {
   switch (operand) {
@@ -10,6 +10,7 @@ const getCorrectAnswer = (num1, num2, operand) => {
       return String(num1 - num2);
     default:
   }
+  return null;
 };
 
 const startCalcGame = () => {

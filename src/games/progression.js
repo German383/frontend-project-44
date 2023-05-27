@@ -1,5 +1,5 @@
-import engine from "../index.js";
-import { getProgression } from "../utils.js";
+import engine from '../index.js';
+import { getProgression } from '../utils.js';
 
 const getCorrectAnswer = () => {
   const [progression, correctAnswer] = getProgression();
