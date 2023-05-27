@@ -35,10 +35,26 @@ const findGCD = (num1, num2) => {
   return String(a);
 };
 
+const getProgression = () => {
+  const result = [];
+  const step = getRandomNumber(1, 15);
+  const length = getRandomNumber(5, 10);
+
+  for (let i = step; i <= step * length; i += step) {
+    result.push(i);
+  }
+  const secretNumber = getRandomNumber(0, result.length - 1);
+  const correctAnswer = String(result[secretNumber]);
+  result[secretNumber] = '..';
+  const progression = result.join(' ');
+  return [progression, correctAnswer];
+};
+
 export {
   getRandomNumber,
   isEven,
   getArrayWithTwoRandomNumbers,
   getOperand,
-  findGCD
+  findGCD,
+  getProgression,
 }

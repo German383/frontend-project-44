@@ -23,6 +23,10 @@ const checkForGameParams = (gameParams, firstRandomNumber, secondRandomNumber, g
       const operandSpace = getOperand(getRandomNumber(1, 3), ' ');
       console.log(`Question: ${firstRandomNumber}${operandSpace}${secondRandomNumber}`);
       return getCorrectAnswer(firstRandomNumber, secondRandomNumber);
+    case 'progression':
+      const [progression, correctAnswer] = getCorrectAnswer();
+      console.log(`Question: ${progression}`);
+      return correctAnswer;
     default:
       console.log(`Question: ${firstRandomNumber}`);
       return getCorrectAnswer(firstRandomNumber);
