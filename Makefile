@@ -12,3 +12,6 @@ lint:
 
 fix:
 	npx eslint . --fix
+
+brain-even:
+	node bin/brain-games.js
