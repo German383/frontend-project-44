@@ -50,6 +50,13 @@ const getProgression = () => {
   return [progression, correctAnswer];
 };
 
+const isPrime = (num) => {
+  for (let i = 2; i < num / 2; i += 1) {
+    if (num % i === 0) return false;
+  }
+  return true;
+};
+
 export {
   getRandomNumber,
   isEven,
@@ -57,4 +64,5 @@ export {
   getOperand,
   findGCD,
   getProgression,
+  isPrime,
 }
