@@ -1,4 +1,4 @@
-import { question } from "readline-sync";
+import { question } from 'readline-sync';
 
 const showGreetings = () => {
   console.log('Welcome to the Brain Games!');
